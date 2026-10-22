@@ -4,7 +4,7 @@
   /* ===== EDIT THIS BLOCK FIRST: her details live here ===== */
   var CONFIG = {
     businessName: "NITA's Boutique", // used in the page title and footer
-    whatsapp: "+2347033654120",   // country code + number, no + and no spaces
+    whatsapp: "2340000000000",   // placeholder country code + number, no + and no spaces
     instagram: "yourhandle",     // without the @
     paystackPublicKey: "",       // paste her pk_test_... key to switch on card payments
     currency: "NGN",
