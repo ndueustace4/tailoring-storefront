@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- EDIT: business name and city in the title and description -->
+<title>Nita's Boutique | Tailoring and custom clothing</title>
+<meta name="description" content="Custom outfits, alterations and aso-ebi tailoring in Your City. Order on WhatsApp.">
+<meta property="og:title" content="Nita's Boutique | Tailoring and custom clothing">
+<meta property="og:description" content="Clothes cut and stitched to fit you. Order on WhatsApp.">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" data-name>Nita's Boutique</a>
+    <button class="menu" id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+    <nav id="links" class="links">
+      <a href="#shop">Shop</a>
+      <a href="#work">Our work</a>
+      <a href="#services">Services</a>
+      <a href="#process">How it works</a>
+      <a href="#order">Custom orders</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cartbtn" id="cartBtn" aria-label="Open cart">Cart (<span id="cartCount">0</span>)</button>
+  </div>
+  <div class="tape" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-text">
+      <h1>Clothes cut and stitched to fit you.</h1>
+      <!-- EDIT: one honest sentence about what she makes and where -->
+      <p class="lead">Custom outfits for weddings, work and everyday wear, made by hand in Your City. Send us your idea and we’ll make it real.</p>
+      <div class="actions">
+        <a class="btn primary" href="#shop">Shop now</a>
+        <a class="btn" data-wa="Hello, I’d like to order a custom outfit.">Custom orders on WhatsApp</a>
+      </div>
+    </div>
+    <figure class="hero-img">
+      <!-- EDIT: replace images/hero.jpg with her best photo (portrait, about 1000px wide) -->
+      <img src="images/hero.jpg" alt="An outfit made by Nita's Boutique" width="800" height="1000">
+    </figure>
+  </section>
+
+  <!-- SHOP: products come from products.js -->
+  <section id="shop" class="block">
+    <div class="wrap">
+      <h2>Shop</h2>
+      <p class="intro">Ready-to-wear pieces, delivered to you. Choose a size and add to your cart. Not sure of your size? See the <a href="#size-guide">size guide</a>.</p>
+      <div class="filters" id="filters"></div>
+      <div class="products" id="products" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- SIZE GUIDE -->
+  <section id="size-guide" class="block">
+    <div class="wrap">
+      <h2>Size guide</h2>
+      <p class="intro">Not sure which size to pick? Measure yourself, then match the numbers below. All measurements are in inches.</p>
+      <div class="guide">
+        <div>
+          <h3>How to measure</h3>
+          <ul class="how">
+            <li><strong>Bust:</strong> around the fullest part of your chest, with the tape level across your back.</li>
+            <li><strong>Waist:</strong> around the narrowest part of your waist, usually just above the belly button.</li>
+            <li><strong>Hips:</strong> around the fullest part of your hips and bottom.</li>
+          </ul>
+          <p class="muted">Wear light clothing and keep the tape snug, not tight. If you fall between two sizes, choose the bigger one, or message us on WhatsApp and we’ll help. Need an exact fit? Request a <a href="#order">custom outfit</a> instead.</p>
+        </div>
+        <div class="table-scroll">
+          <!-- EDIT: replace these numbers with her real size chart -->
+          <table>
+            <thead><tr><th>Size</th><th>Bust</th><th>Waist</th><th>Hips</th></tr></thead>
+            <tbody>
+              <tr><th>S</th><td>33–35</td><td>26–28</td><td>36–38</td></tr>
+              <tr><th>M</th><td>36–37</td><td>29–31</td><td>39–41</td></tr>
+              <tr><th>L</th><td>38–40</td><td>32–34</td><td>42–44</td></tr>
+              <tr><th>XL</th><td>41–43</td><td>35–37</td><td>45–47</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="work" class="block">
+    <div class="wrap">
+      <h2>Our work</h2>
+      <p class="intro">A few recent pieces. More on Instagram.</p>
+      <div class="gallery">
+        <!-- EDIT: use her real photos named work-1.jpg to work-6.jpg, and change each caption and alt text -->
+        <figure><img src="images/work-1.jpg" alt="Ankara two-piece set" loading="lazy"><figcaption>Ankara two-piece</figcaption></figure>
+        <figure><img src="images/work-2.jpg" alt="Lace wedding guest gown" loading="lazy"><figcaption>Lace gown</figcaption></figure>
+        <figure><img src="images/work-3.jpg" alt="Tailored men’s suit" loading="lazy"><figcaption>Tailored suit</figcaption></figure>
+        <figure><img src="images/work-4.jpg" alt="Aso-ebi group outfits" loading="lazy"><figcaption>Aso-ebi for a group</figcaption></figure>
+        <figure><img src="images/work-5.jpg" alt="Casual everyday dress" loading="lazy"><figcaption>Everyday dress</figcaption></figure>
+        <figure><img src="images/work-6.jpg" alt="Kids’ outfit" loading="lazy"><figcaption>Kids’ outfit</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="block">
+    <div class="wrap">
+      <h2>Services and prices</h2>
+      <p class="intro">Prices start at the amounts below. The final price depends on fabric and style, and we confirm it before we cut.</p>
+      <ul class="services">
+        <!-- EDIT: change services and starting prices to match what she really charges -->
+        <li><div><h3>Custom outfits</h3><p>Dresses, skirts, tops, trousers and native wear, made from your measurements.</p></div><strong>from ₦15,000</strong></li>
+        <li><div><h3>Suits and corporate wear</h3><p>Tailored for a clean fit.</p></div><strong>from ₦30,000</strong></li>
+        <li><div><h3>Aso-ebi and group orders</h3><p>Matching outfits for weddings and events, with a discount for larger groups.</p></div><strong>ask for a quote</strong></li>
+        <li><div><h3>Alterations and repairs</h3><p>Hems, resizing, zips and fixes.</p></div><strong>from ₦2,000</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROCESS (a real sequence, so it is numbered) -->
+  <section id="process" class="block">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><h3>Tell us what you want</h3><p>Message us on WhatsApp with a photo of the style, your fabric (or ask us to source it) and your event date.</p></li>
+        <li><h3>Share your measurements</h3><p>Visit us, or send measurements. We’ll guide you through taking them at home.</p></li>
+        <li><h3>Agree the price and date</h3><p>We confirm the cost and pickup date, and take a deposit to start.</p></li>
+        <li><h3>Collect your outfit</h3><p>Try it on, and we adjust the fit before you leave.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="block">
+    <div class="wrap">
+      <h2>What customers say</h2>
+      <div class="quotes">
+        <!-- EDIT: replace with real messages from her customers (ask permission first) -->
+        <blockquote><p>“It fit perfectly and was ready before my event.”</p><footer>Customer name</footer></blockquote>
+        <blockquote><p>“Exactly like the picture I sent. I’ll order again.”</p><footer>Customer name</footer></blockquote>
+        <blockquote><p>“She handled our whole group of twelve without any stress.”</p><footer>Customer name</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER FORM: opens WhatsApp with the details filled in, no server needed -->
+  <section id="order" class="block">
+    <div class="wrap narrow">
+      <h2>Request a custom outfit</h2>
+      <p class="intro">Want something made just for you? Fill this in and it opens WhatsApp with your details ready to send.</p>
+      <form id="orderForm" class="form">
+        <label>Your name<input name="name" required autocomplete="name"></label>
+        <label>What do you need?
+          <select name="item" required>
+            <option value="">Choose one</option>
+            <option>Custom outfit</option>
+            <option>Suit or corporate wear</option>
+            <option>Aso-ebi or group order</option>
+            <option>Alteration or repair</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>When do you need it?<input type="date" name="date"></label>
+        <label>Details<textarea name="details" rows="4" placeholder="Style, fabric, colours, number of people"></textarea></label>
+        <button class="btn primary" type="submit">Send order on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="block">
+    <div class="wrap contact">
+      <div>
+        <h2>Visit or message us</h2>
+        <!-- EDIT: address, hours -->
+        <p><strong>Address</strong><br>Shop address, Your City</p>
+        <p><strong>Hours</strong><br>Monday to Saturday, 9am to 6pm</p>
+      </div>
+      <div class="actions col">
+        <a class="btn primary" data-wa="Hello, I’d like to ask about your tailoring services.">Chat on WhatsApp</a>
+        <a class="btn" data-ig>Instagram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> <span data-name>Nita's Boutique</span>. Website by Eustace.</div>
+</footer>
+
+<a class="float-wa" data-wa="Hello, I’d like to order a custom outfit." aria-label="Chat on WhatsApp">Chat on WhatsApp</a>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer-head"><h2>Your cart</h2><button class="x" id="closeCart" type="button">Close</button></div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="total"><span>Total</span><strong id="cartTotal">₦0</strong></div>
+    <form id="checkout" class="form">
+      <label>Full name<input name="name" required autocomplete="name"></label>
+      <label>Phone (WhatsApp)<input name="phone" type="tel" required autocomplete="tel"></label>
+      <label>Email<input name="email" type="email" autocomplete="email"></label>
+      <label>Delivery address<textarea name="address" rows="2" required></textarea></label>
+      <button class="btn primary" type="submit" id="payBtn" hidden>Pay by card</button>
+      <button class="btn" type="button" id="waBtn">Order on WhatsApp</button>
+    </form>
+  </div>
+</aside>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
